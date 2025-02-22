@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+   
+  
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+
+<script>
+  const button = document.getElementById('myButton');
+  const loadingIndicator = document.getElementById('loadingIndicator');
+
+  button.addEventListener('click', () => {
+    loadingIndicator.style.display = 'block'; 
+    // Simulate some work
+    setTimeout(() => {
+      loadingIndicator.style.display = 'none';
+      // Update content, etc.
+    }, 2000);
+  });
+</script>
